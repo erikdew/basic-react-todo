@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const NotDoneList = (props) => {
   const notDoneTodosToRender = props.list.map((element, index) => {
@@ -11,9 +11,9 @@ const NotDoneList = (props) => {
     )
   })
   return (
-    <ul>
+    <ol>
       {notDoneTodosToRender}
-    </ul>
+    </ol>
   )
 }
 
